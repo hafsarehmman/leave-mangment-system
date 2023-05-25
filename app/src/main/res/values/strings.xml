@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Eproject_1</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <array name="my_array">
+        <item>Apply leave</item>
+        <item>Leave Summary</item>
+        <item>Team Members</item>
+        <item>Holiday Calender</item>
+        <item>Profile</item>
+        <item>Announcement Center</item>
+        <item>logout</item>
+
+    </array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".account1">
+
+    <ImageView
+        android:id="@+id/logoimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/splashlogo" />
+
+    <TextView
+        android:id="@+id/logoname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="HELLO THERE, WELCOME BACK"
+        android:textColor="#4D4D57"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/slogan_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Account"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"/>
+
+ <Button
+     android:id="@+id/employee_account1"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:backgroundTint="#4D4D57"
+     android:text="Employee Account"
+     android:textColor="#fff"
+     android:layout_margin="5dp"
+     android:elevation="0dp"
+     />
+
+    <Button
+        android:id="@+id/manager_account2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manager Account"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        android:backgroundTint="#4D4D57"
+        android:elevation="0dp"/>
+
+    <Button
+        android:id="@+id/admin_account3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LMS Admin Account"
+        android:textColor="#fff"
+        android:layout_margin="5dp"
+        android:elevation="0dp"
+       android:backgroundTint="@color/button"
+        />
+
+
+
+
+</LinearLayout>
