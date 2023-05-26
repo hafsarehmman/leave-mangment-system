@@ -22,7 +22,9 @@ public class account1 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(account1.this,employee_account.class);
+                Intent intent1 = new Intent(account1.this,Manager_signin.class);
                 startActivity(intent);
+                startActivity(intent1);
             }
         });
 

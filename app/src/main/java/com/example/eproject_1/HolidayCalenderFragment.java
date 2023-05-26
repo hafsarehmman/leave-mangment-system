@@ -1,5 +1,6 @@
 package com.example.eproject_1;
 
+import android.graphics.Paint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -29,84 +30,44 @@ import java.util.Map;
 
 
 public class HolidayCalenderFragment extends Fragment {
-
+    CalendarView calendarView;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        CalendarView calendarView;
+
 
         View v = inflater.inflate(R.layout.fragment_holiday_calender, container, false);
-
-//                calendarView =v.findViewById(R.id.calendar_view);
-//                calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
-//                    @Override
-//                    public void onSelectedDayChange(@NonNull CalendarView view, int year, int month, int dayOfMonth) {
-//                        // Convert the selected date to a Calendar object
-//                        Calendar selectedDate = Calendar.getInstance();
-//                        selectedDate.set(year, month, dayOfMonth);
+//        ColoredCalendarView calendarView =v.findViewById(R.id.calendarView);
+//        List<LeaveEvent> leaveEvents = new ArrayList<>();leaveEvents.add(new
+//                LeaveEvent(2023, 4, 15, Color.RED));leaveEvents.add(new LeaveEvent(2023, 4, 20,
+//                Color.BLUE));// Add more leave events as needed
+//        calendarView.setLeaveEvents(leaveEvents);
 //
-//                        // Fetch the list of applied leaves for the selected date
-//                        fetchAppliedLeaves(selectedDate.getTime());
-//                    }
-//               });
-return v;
-   }}
+//        Calendar day, RectF cellRect,
+//        boolean isSelected) {
+//            super.onDrawDayCell(canvas, day, cellRect, isSelected);
 //
-//            private void fetchAppliedLeaves(Date selectedDate) {
-//                // Create a request queue using Volley
-//                RequestQueue requestQueue= Volley.newRequestQueue(getContext());
+//            // Determine the date of the current cell
+//            int year = day.get(Calendar.YEAR);
+//            int month = day.get(Calendar.MONTH);
+//            int dayOfMonth = day.get(Calendar.DAY_OF_MONTH);
 //
-//                // Define the API endpoint URL for fetching applied leaves
-//                String url = "http://your-api-endpoint.com/applied_leaves";
+//            for (LeaveEvent leaveEvent : leaveEvents) {
+//                // Check if the leave event matches the current cell's date
+//                if (leaveEvent.getYear() == year && leaveEvent.getMonth() == month &&
+//                        leaveEvent.getDay() == dayOfMonth) {
+//                    Paint paint = new Paint();
+//                    paint.setColor(leaveEvent.getColor());
 //
-//                // Create the request parameters with the selected date
-//                Map<String, String> params = new HashMap<>();
-//                SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
-//                params.put("selected_date", sdf.format(selectedDate));
-//                StringRequest request=new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//
-//                        new Response.Listener<String>() {
-//                            @Override
-//                            public void onResponse(String response) {
-//                                // Parse the response and process the applied leaves
-//                                List<Leave> appliedLeaves = pa(response);
-//                                processAppliedLeaves(appliedLeaves);
-//
-//                    }
-//                }, new Response.ErrorListener() {
-//                    @Override
-//                    public void onErrorResponse(VolleyError error) {
-//
-//
-//                        Toast.makeText(getContext(), ""+error.getMessage(), Toast.LENGTH_SHORT).show();
-//                    }
-//                }){
-//
-//            private List<Leave> parseAppliedLeavesResponse(String response) {
-//                // Parse the JSON response and convert it to a list of Leave objects
-//                List<Leave> appliedLeaves = new ArrayList<>();
-//                // Implement the parsing logic based on your API response structure
-//                // Add parsed Leave objects to the appliedLeaves list
-//                return appliedLeaves;
-//            }
-//
-//            private void processAppliedLeaves(List<Leave> appliedLeaves) {
-//                // Process the applied leaves
-//                if (!appliedLeaves.isEmpty()) {
-//                    // Apply styling or color to the calendar dates to indicate applied leaves
-//                    for (Leave leave : appliedLeaves) {
-//                        Calendar calendar = Calendar.getInstance();
-//                        calendar.setTime(leave.getDate());
-//                        int year = calendar.get(Calendar.YEAR);
-//                        int month = calendar.get(Calendar.MONTH);
-//                        int dayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
-//                        calendar.setText(year, month, dayOfMonth, R.style.AppliedLeaveTextStyle);
-//                    }
+//                    // Draw a rectangle with the leave event's color
+//                    canvas.drawRect(cellRect, paint);
+//                    break;
 //                }
 //            }
 //        }
-
-
-
+//    }
+return v;
+   }}
+//
+//
+//

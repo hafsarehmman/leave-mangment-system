@@ -58,19 +58,15 @@ public class Dashboard_employee extends AppCompatActivity {
                      case 1:
                          getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,new LeaveFragment()).commit();
                          break;
+
                      case 2:
-                         getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,new TeamMemberFragment()).commit();
-                         break;
-                     case 3:
                          getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,new HolidayCalenderFragment()).commit();
                          break;
-                     case 4:
+                     case 3:
                          getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,new ProfileFragment()).commit();
                          break;
-                     case 5:
-                         getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,new AnnouncementFragment()).commit();
-                         break;
-                     case 6:
+
+                     case 4:
                          SharedPreferences preferences = getSharedPreferences("login", Context.MODE_PRIVATE);
                          SharedPreferences.Editor editor = preferences.edit();
                          editor.remove("islogin");

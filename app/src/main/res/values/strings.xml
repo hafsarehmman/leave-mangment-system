@@ -7,10 +7,8 @@
     <array name="my_array">
         <item>Apply leave</item>
         <item>Leave Summary</item>
-        <item>Team Members</item>
         <item>Holiday Calender</item>
         <item>Profile</item>
-        <item>Announcement Center</item>
         <item>logout</item>
 
     </array>
